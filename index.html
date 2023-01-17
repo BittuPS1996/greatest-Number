@@ -19,15 +19,19 @@
         </div>
     </div>
 </body>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <script>
     function Greatest_of_2_Number(){
         First_Number=a1.value
         Second_Number=a2.value
         if(First_Number>Second_Number){
-            alert(First_Number +" is greater")
+            swal(First_Number +" is greater")
         }
         else if(Second_Number>First_Number){
-            alert(Second_Number +" is greater")
+            swal(Second_Number +" is greater")
+        }
+        else{
+            swal("Please enter different numbers")
         }
     }
 </script>
